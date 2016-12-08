@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="lib/venodr/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="lib/venodr/jquery-ui/jquery-ui.js"></script>
+  <link href="lib/venodr/jquery-ui/themes/base/jquery-ui.min.css"rel="stylesheet">
+  <link href="lib/venodr/jquery-ui/themes/base/accordion.css">
+</head>
+<body>
+<div id="divAccordion">
+
+    <h3>First</h3>
+    <div>firt content</div>
+    <h3>Second</h3>
+    <div>second content</div>
+    <h3>Third</h3>
+    <div>third content</div>
+    <h3>Fourth</h3>
+    <div>fourth content</div>
+  </div>
+
+</body>
+<script>
+  $(document).ready(function () {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#divAccordion" ).accordion({
+      icons: icons
+    });
+  })
+</script>
+</html>
